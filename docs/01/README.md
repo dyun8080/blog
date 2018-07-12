@@ -2,7 +2,7 @@
 
 ### Markdown 编辑器写文章
 
-> 来自[掘金Markdown使用手册](https://juejin.im/editor/guide/markdown)
+> 来自 [掘金Markdown使用手册](https://juejin.im/editor/guide/markdown)
 
 欢迎使用 Markdown 编辑器撰写技术文章，只专注于内容和技术，不再费心排版的问题。这是一份简要的 Markdown 引导指南，希望可以帮助您顺利的开始使用 Markdown 编辑器。
 
@@ -76,22 +76,30 @@
 
 例如：
 
-``` python
-def bubbleSort(alist):
- for passnum in range(len(alist)-1,0,-1):
- #print alist,passnum
- for i in range(passnum):
- if alist[i]>alist[i+1]:
- temp = alist[i]
- alist[i] = alist[i+1]
- alist[i+1] = temp
- return alist
-```
-
-``` js
+``` jsx
   import React from 'react';
 
   class HelloMessage extends React.Component {
+    render() {
+      return (
+        <div>
+          Hello {this.props.name}
+        </div>
+      );
+    }
+  }
+
+  export default HelloMessage;
+```
+
+``` tsx
+  import React from 'react';
+
+  interface Props {
+    name: string
+  }
+
+  class HelloMessage extends React.Component<Props, any> {
     render() {
       return (
         <div>
