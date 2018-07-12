@@ -76,6 +76,7 @@
 
 例如：
 
+#### jsx:
 ``` jsx
   import React from 'react';
 
@@ -92,6 +93,7 @@
   export default HelloMessage;
 ```
 
+#### tsx:
 ``` tsx
   import React from 'react';
 
